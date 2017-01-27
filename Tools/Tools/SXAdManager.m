@@ -53,8 +53,9 @@
     NSString *path = [NSString stringWithFormat:@"http://g1.163.com/madr?app=7A16FBB6&platform=ios&category=startup&location=1&timestamp=%ld",(long)now];
     
     [[HLAPIRequest request]
-    .setCustomURL(path)
-    .success(^(id response){
+     .enableDefaultParams(NO)
+     .setCustomURL(path)
+     .success(^(id response){
         NSArray *adArray = [response valueForKey:@"ads"];
         NSString *imgUrl = adArray[0][@"res_url"][0];
         NSString *imgUrl2 = nil;
