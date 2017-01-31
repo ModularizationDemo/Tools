@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B6959A2B0C2247792DF8F4AE /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAE9F032ED6D0371FBF2EA0 /* libPods-Tools.a */; };
+		CF377EF81E40BCCF0019110C /* SXTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF377EF71E40BCCF0019110C /* SXTitleLabel.m */; };
+		CF377EFB1E40BCF60019110C /* SXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF377EFA1E40BCF60019110C /* SXTabBar.m */; };
+		CF377EFE1E40BD200019110C /* SXBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF377EFD1E40BD200019110C /* SXBarButton.m */; };
 		CF4DCCBD1E3B248F00FDE632 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4DCCB11E3B248F00FDE632 /* NSString+Base64.m */; };
 		CF4DCCBE1E3B248F00FDE632 /* SXAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4DCCB31E3B248F00FDE632 /* SXAdManager.m */; };
 		CF4DCCC11E3B248F00FDE632 /* UILabel+Wonderful.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4DCCBA1E3B248F00FDE632 /* UILabel+Wonderful.m */; };
@@ -24,6 +27,12 @@
 		1FAE9F032ED6D0371FBF2EA0 /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB7C99E6C5B3E277AAB207A /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
 		B4F94AA4A913E1BD3C265EB9 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
+		CF377EF61E40BCCF0019110C /* SXTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTitleLabel.h; sourceTree = "<group>"; };
+		CF377EF71E40BCCF0019110C /* SXTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTitleLabel.m; sourceTree = "<group>"; };
+		CF377EF91E40BCF60019110C /* SXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTabBar.h; sourceTree = "<group>"; };
+		CF377EFA1E40BCF60019110C /* SXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTabBar.m; sourceTree = "<group>"; };
+		CF377EFC1E40BD200019110C /* SXBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBarButton.h; sourceTree = "<group>"; };
+		CF377EFD1E40BD200019110C /* SXBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBarButton.m; sourceTree = "<group>"; };
 		CF4DCCB01E3B248F00FDE632 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		CF4DCCB11E3B248F00FDE632 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		CF4DCCB21E3B248F00FDE632 /* SXAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAdManager.h; sourceTree = "<group>"; };
@@ -77,6 +86,12 @@
 				CF4DCCBA1E3B248F00FDE632 /* UILabel+Wonderful.m */,
 				CF4DCCBB1E3B248F00FDE632 /* UIView+Frame.h */,
 				CF4DCCBC1E3B248F00FDE632 /* UIView+Frame.m */,
+				CF377EF61E40BCCF0019110C /* SXTitleLabel.h */,
+				CF377EF71E40BCCF0019110C /* SXTitleLabel.m */,
+				CF377EF91E40BCF60019110C /* SXTabBar.h */,
+				CF377EFA1E40BCF60019110C /* SXTabBar.m */,
+				CF377EFC1E40BD200019110C /* SXBarButton.h */,
+				CF377EFD1E40BD200019110C /* SXBarButton.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -255,12 +270,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF377EFE1E40BD200019110C /* SXBarButton.m in Sources */,
 				CF4DCCBD1E3B248F00FDE632 /* NSString+Base64.m in Sources */,
 				CFD05A881E3AD0B500A76B72 /* ViewController.m in Sources */,
 				CF4DCCC21E3B248F00FDE632 /* UIView+Frame.m in Sources */,
 				CFD05A851E3AD0B500A76B72 /* AppDelegate.m in Sources */,
 				CF4DCCC11E3B248F00FDE632 /* UILabel+Wonderful.m in Sources */,
 				CF4DCCBE1E3B248F00FDE632 /* SXAdManager.m in Sources */,
+				CF377EFB1E40BCF60019110C /* SXTabBar.m in Sources */,
+				CF377EF81E40BCCF0019110C /* SXTitleLabel.m in Sources */,
 				CFD05A821E3AD0B500A76B72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
